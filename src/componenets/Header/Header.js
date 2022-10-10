@@ -7,7 +7,7 @@ const Header = () => {
   <div className="card-body">
   
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam modi repudiandae perferendis fuga ullam mollitia voluptates sapiente odio a in dolorum magnam enim perspiciatis natus similique, at eius, incidunt exercitationem omnis iusto possimus. Neque id tempore aliquam laudantium excepturi ullam, qui repellat 
+        deserunt explicabo sed ipsum provident eaque doloremque, totam culpa tempora. Vitae voluptatum tempora nam ut quam veritatis, ipsa blanditiis suscipit, placeat culpa soluta quaerat, architecto omnis. Minus dignissimos quia ad debitis, illo, dolorem odit consequuntur tempora adipisci, voluptatum atque neque exercitationem.
     </p>
   </div>
 </div>
