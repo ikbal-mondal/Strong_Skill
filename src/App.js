@@ -13,8 +13,21 @@ function App() {
 
       children:[
        
-        {path:'/',element:<Course></Course>},
-        {path:'/course',element:<Course></Course>},
+        {path:'/',
+        loader: () => {
+
+          return fetch('https://openapi.programming-hero.com/api/quiz')
+
+       },
+        element:<Course></Course>},
+        
+        {path:'/course',
+        loader: () => {
+
+          return fetch('https://openapi.programming-hero.com/api/quiz')
+
+       },
+        element:<Course></Course>},
         {path:'/recharts', element:<Recharts></Recharts>},
         {path:'/blog', element:<Blog></Blog>},
         {path:'/*', element:<ErrorPage></ErrorPage>}
