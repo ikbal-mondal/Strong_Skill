@@ -6,6 +6,7 @@ import Course from './componenets/Course';
 import Recharts from './componenets/Recharts';
 import Blog from './componenets/Blog';
 import ErrorPage from './componenets/ErrorPage'
+import CourseRoutes from './componenets/CourseRoutes';
 function App() {
   const router  = createBrowserRouter([
      {path:'/',
@@ -28,6 +29,15 @@ function App() {
 
        },
         element:<Course></Course>},
+        {
+          path: '/course/:courseId',
+          loader:  ({ params }) => {
+            return fetch(
+              `https://openapi.programming-hero.com/api/quiz/${params.courseId}`
+            );
+          },
+          element: <CourseRoutes></CourseRoutes>,
+        },
         {path:'/recharts', element:<Recharts></Recharts>},
         {path:'/blog', element:<Blog></Blog>},
         {path:'/*', element:<ErrorPage></ErrorPage>}

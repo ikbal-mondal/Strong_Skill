@@ -1,6 +1,6 @@
-import src from 'daisyui';
-import React from 'react';
 
+import React from 'react';
+import { Link } from 'react-router-dom';
 const ShowCourse = ({course}) => {
     const {logo,name,total  , id } = course;
 
@@ -19,7 +19,7 @@ const ShowCourse = ({course}) => {
 
     </div>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary w-full">Buy Now</button>
+      <Link to={`/course/${id}`} className='mx-auto'><button  className="btn btn-primary px-16 ">Buy Now</button></Link>
     </div>
   </div>
    </div>
