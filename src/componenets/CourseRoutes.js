@@ -9,12 +9,14 @@ const CourseRoutes = () => {
     return (
         <div>
             <h1>quiz total : {courseQuiz.length}</h1>
+           <div className="w-8/12 mx-auto">
            {
             courseQuiz.map(quiz => <ShowQuiz
             key={quiz.id}
             quiz={quiz}
             ></ShowQuiz>)
            }
+           </div>
         </div>
     );
 };
