@@ -22,7 +22,7 @@ const ShowQuiz = ({quiz,data}) => {
 
      const handleRadioBox = () =>{
   
-      if(question.length === correctAnswer ){
+      if(options === correctAnswer ){
         
         toast.success('correct answer', {autoClose: 500})
       } else {
