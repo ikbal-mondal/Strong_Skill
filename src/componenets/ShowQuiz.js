@@ -1,32 +1,72 @@
 import React from 'react';
-
-const ShowQuiz = ({quiz}) => {
-     const {options , question} = quiz
-    
-    return (
+import { EyeSlashIcon } from '@heroicons/react/24/solid'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+const ShowQuiz = ({quiz,data}) => {
        
-        <div className='border my-5 shadow-2xl rounded-2xl p-5 '>
-             <h1 className='text-xl m-2'>{question}</h1>
-     <div className="form-control p-3 m-3 bg-slate-200 rounded">
-     <label className="label cursor-pointer">
-    <span className="label-text">{options[0]}</span> 
-    <input type="checkbox"  className="checkbox checkbox-primary" />
-  </label>
- </div>
-     <div className="form-control p-3 m-3 bg-slate-200 rounded">
-     <label className="label cursor-pointer">
-    <span className="label-text">{options[1]}</span> 
-    <input type="checkbox"  className="checkbox checkbox-primary" />
-  </label>
- </div>
-     <div className="form-control p-3 m-3 bg-slate-200 rounded">
-     <label className="label cursor-pointer">
-    <span className="label-text">{options[2]}</span> 
-    <input type="checkbox"  className="checkbox checkbox-primary" />
-  </label>
- </div>             
+   
+ 
+  
+     const {options , question, correctAnswer } = quiz
+   console.log(quiz);
+     const ShowRightAnswer = () => {
           
+      if(true){
+        
+        toast(correctAnswer);
+        return
+      }
+
+     }
+  
+    return (
+           
+        <div className="">
+      
+          <div className='border my-5 shadow-2xl rounded-2xl p-5 '>
+          
+          <div className="flex flex-wrap justify-between items-center">
+          
+          <div className="">
+            <h1 className='text-xl m-2'>{question}</h1>
+            </div>
+          <div className="">
+          <EyeSlashIcon onClick={ShowRightAnswer} className="h-6 w-6 text-black"/>
+           </div>
+           <ToastContainer />
+         
+          </div>
+          
+  <div className="form-control p-3 m-3 bg-slate-200 rounded">
+  <label className="label cursor-pointer">
+ <span className="label-text">{options[0]}</span> 
+ <input type="radio"  name="radio-4" className="radio radio-accent checkbox-primary" />
+</label>
+</div>
+  <div className="form-control p-3 m-3 bg-slate-200 rounded">
+  <label className="label cursor-pointer">
+ <span className="label-text">{options[1]}</span> 
+ <input type="radio"  name="radio-4" className="radio radio-accent checkbox-primary" />
+</label>
+</div>
+  <div className="form-control p-3 m-3 bg-slate-200 rounded">
+  <label className="label cursor-pointer">
+ <span className="label-text">{options[2]}</span> 
+ <input type="radio"  name="radio-4" className="radio radio-accent checkbox-primary" />
+</label>
+</div>             
+  <div className="form-control p-3 m-3 bg-slate-200 rounded">
+  <label className="label cursor-pointer">
+ <span className="label-text">{options[3]}</span> 
+ <input type="radio"  name="radio-4" className="radio radio-accent checkbox-primary" />
+</label>
+
+</div>             
+       
+     </div>
         </div>
+  
+
     );
 };
 
