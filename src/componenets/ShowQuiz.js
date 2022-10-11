@@ -13,11 +13,26 @@ const ShowQuiz = ({quiz,data}) => {
           
       if(true){
         
-        toast(correctAnswer);
+        toast.success(correctAnswer, {autoClose:500});
         return
       }
 
      }
+
+
+     const handleRadioBox = () =>{
+  
+      if(question.length === correctAnswer ){
+        
+        toast.success('correct answer', {autoClose: 500})
+      } else {
+       
+        toast.error('incorrect answer', {autoClose:500})
+
+      }
+
+     }
+
   
     return (
            
@@ -40,25 +55,25 @@ const ShowQuiz = ({quiz,data}) => {
   <div className="form-control p-3 m-3 bg-slate-200 rounded">
   <label className="label cursor-pointer">
  <span className="label-text">{options[0]}</span> 
- <input type="radio"  name="radio-4" className="radio radio-accent checkbox-primary" />
+ <input type="radio"  onClick={ () =>  handleRadioBox(options)} name="radio-4" className="radio radio-accent checkbox-primary" />
 </label>
 </div>
   <div className="form-control p-3 m-3 bg-slate-200 rounded">
   <label className="label cursor-pointer">
  <span className="label-text">{options[1]}</span> 
- <input type="radio"  name="radio-4" className="radio radio-accent checkbox-primary" />
+ <input type="radio" onClick={ () =>  handleRadioBox(options)}  name="radio-4" className="radio radio-accent checkbox-primary" />
 </label>
 </div>
   <div className="form-control p-3 m-3 bg-slate-200 rounded">
   <label className="label cursor-pointer">
  <span className="label-text">{options[2]}</span> 
- <input type="radio"  name="radio-4" className="radio radio-accent checkbox-primary" />
+ <input type="radio"  onClick={ () =>  handleRadioBox(options)} name="radio-4" className="radio radio-accent checkbox-primary" />
 </label>
 </div>             
   <div className="form-control p-3 m-3 bg-slate-200 rounded">
   <label className="label cursor-pointer">
  <span className="label-text">{options[3]}</span> 
- <input type="radio"  name="radio-4" className="radio radio-accent checkbox-primary" />
+ <input type="radio" onClick={ () =>  handleRadioBox(options)}  name="radio-4" className="radio radio-accent checkbox-primary" />
 </label>
 
 </div>             

@@ -38,7 +38,15 @@ function App() {
           },
           element: <CourseRoutes></CourseRoutes>,
         },
-        {path:'/recharts', element:<Recharts></Recharts>},
+        {path:'/recharts',
+
+        loader: () => {
+
+          return fetch('https://openapi.programming-hero.com/api/quiz')
+
+       },
+        
+         element:<Recharts></Recharts>},
         {path:'/blog', element:<Blog></Blog>},
         {path:'/*', element:<ErrorPage></ErrorPage>}
         
