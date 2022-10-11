@@ -2,8 +2,9 @@ import React from 'react';
 
 const ErrorPage = () => {
     return (
-        <div>
-            <h2 className='text-2xl bg-red-800 '>this is a error handler pages </h2>
+        <div className=''>
+           
+            <img className='' src="https://cdn.dribbble.com/users/1408464/screenshots/6377404/404_illustration_4x.png" alt="" />
         </div>
     );
 };
