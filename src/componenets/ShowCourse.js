@@ -17,13 +17,12 @@ const ShowCourse = ({course}) => {
      <div className="">
      <p className=' text-lg font-semibold'> Quiz: {total}</p>
      </div>
-
-     <div className="card-actions justify-end">
+   
+    </div>
+    <div className="card-actions justify-center">
       <Link to={`/course/${id}`} className=''><button  className="btn btn-primary  ">Start Practice 
       <ArrowRightCircleIcon className="h-6 w-6 text-green-600"/>
        </button></Link>
-    </div>
-
     </div>
     
   </div>

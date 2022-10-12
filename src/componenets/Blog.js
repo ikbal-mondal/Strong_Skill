@@ -19,6 +19,7 @@ const Blog = () => {
        </div>
        <div className="collapse-content"> 
         <p>
+            
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore voluptates ullam voluptas dolorum minus rerum aliquam, vitae a dolore! Voluptas blanditiis, ipsum repellendus vel eius error obcaecati eveniet quibusdam!loem30 Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequatur possimus ducimus similique laboriosam reprehenderit natus ea, ipsum quis perferendis dolorem corporis praesentium fugiat culpa quam ipsa tempora earum placeat.
 
         </p>

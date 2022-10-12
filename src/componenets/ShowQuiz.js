@@ -6,29 +6,31 @@ const ShowQuiz = ({quiz,data}) => {
        
    
  
-  
      const {options , question, correctAnswer } = quiz
-   console.log(quiz);
+      
+  //  console.log(quiz);
      const ShowRightAnswer = () => {
           
       if(true){
         
         toast.success(correctAnswer, {autoClose:500});
-        return
+        
       }
 
      }
 
+    
 
      const handleRadioBox = () =>{
-  
-      if(options === correctAnswer ){
+      
+      if( correctAnswer !== options){
+        // console.log(correctAnswer);
+         toast.error('incorrect answer', {autoClose:500})
         
-        toast.success('correct answer', {autoClose: 500})
       } else {
        
-        toast.error('incorrect answer', {autoClose:500})
-
+        toast.success('correct answer', {autoClose: 500})
+       
       }
 
      }
@@ -38,15 +40,15 @@ const ShowQuiz = ({quiz,data}) => {
            
         <div className="">
       
-          <div className='border my-5 shadow-2xl rounded-2xl p-5 '>
+          <div className='border my-8 shadow-2xl rounded-2xl p-5 '>
           
-          <div className="flex flex-wrap justify-between items-center">
+          <div className="flex  justify-between items-center">
           
           <div className="">
-            <h1 className='text-xl m-2'>{question}</h1>
+            <h1 className='text-xl m-2'>{question.slice(3, -4)}</h1>
             </div>
           <div className="">
-          <EyeSlashIcon onClick={ShowRightAnswer} className="h-6 w-6 text-black"/>
+          <EyeSlashIcon onClick={ShowRightAnswer} className="h-6 w-6 text-black hover"/>
            </div>
            <ToastContainer />
          
