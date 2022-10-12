@@ -9,7 +9,7 @@ const Recharts = () => {
      const data = courseItems;
      const {id , name,total} = courseItems;
     return (
-        <div className='flex items-center justify-center' >
+        <div className='flex items-center justify-center mt-20'>
            
            <BarChart width={400} height={400} data={data}>
   <CartesianGrid strokeDasharray="3 3" />

@@ -1,28 +1,26 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   let activeStyle = {
-    textDecoration: "underline",
+    borderBottom: '3px solid blue'
   };
 
   return (
-    <div class="bg-white">
+    <div class="bg-slate-300 shadow-2xl shadow-slate-600">
       <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
           <NavLink
-            to="/"
-            style={({ isActive }) =>
-            isActive ? activeStyle : undefined
-          }
+            
+        
             aria-label="Company"
             title="Company"
             class="inline-flex items-center"
           >
            
            <div className="flex items-center">
-           <span>Strong</span>
+           <span className='text-2xl font-extrabold'>Strong</span>
            <img className='w-12' src="https://www.logolynx.com/images/logolynx/d1/d16be8c4701395972a4c753e93de1217.jpeg" alt="" />
            </div>
             
@@ -99,13 +97,13 @@ const Navbar = () => {
                   <div class="flex items-center justify-between mb-4">
                     <div>
                       <NavLink
-                        to="/"
+                        to="/course"
                         aria-label="Company"
                         title="Company"
                         class="inline-flex items-center"
                       >
                        
-                       
+                       Course
                       </NavLink>
                     </div>
                     <div>
@@ -128,54 +126,24 @@ const Navbar = () => {
                     <ul class="space-y-4">
                       <li>
                         <NavLink
-                          to="/"
+                          to="/recharts"
                           aria-label="Our product"
                           title="Our product"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Product
+                          Rechart
                         </NavLink>
                       </li>
                       <li>
                         <NavLink
-                          to="/"
+                          to="/blog"
                           aria-label="Our product"
                           title="Our product"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Features
+                          Blog
                         </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/"
-                          aria-label="Product pricing"
-                          title="Product pricing"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Pricing
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/"
-                          aria-label="About us"
-                          title="About us"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          About us
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/"
-                          class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                          aria-label="Sign up"
-                          title="Sign up"
-                        >
-                          Sign up
-                        </NavLink>
-                      </li>
+                      </li>                
                     </ul>
                   </nav>
                 </div>
