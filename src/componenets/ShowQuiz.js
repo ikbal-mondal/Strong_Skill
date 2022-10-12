@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './ShowQuize.css'
 
-const ShowQuiz = ({quiz,data}) => {
+const ShowQuiz = ({quiz,index}) => {
        
    
  
@@ -50,6 +50,7 @@ const ShowQuiz = ({quiz,data}) => {
           <div className="flex  justify-between items-center">
           
           <div className="">
+            <span className='text-2xl text-white'> Quiz {index === 0 ? index = 1  : index + 1 }</span>
             <h1 className='text-xl m-2 text-white'>{question.slice(3, -4)}</h1>
             </div>
           <div className="">
@@ -59,31 +60,24 @@ const ShowQuiz = ({quiz,data}) => {
          
           </div>
           
-  <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style">
-  <label className="label cursor-pointer"  >
-  <span className="label-text custom-size-quiz ">{options[0]}</span>
- <input type="radio"name="radio-4" className="radio radio-accent checkbox-primary" onClick={(e) => handleRadioBox(e.target.innerText)} />
-</label>
-</div>
-  <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style" >
-  <label className="label cursor-pointer" onClick={(e) => handleRadioBox(e.target.innerText)}>
- <span className="label-text custom-size-quiz" >{options[1]}</span> 
- <input type="radio"   name="radio-4" className="radio radio-accent checkbox-primary" />
-</label>
-</div>
-  <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style" >
-  <label className="label cursor-pointer" onClick={(e) => handleRadioBox(e.target.innerText)}>
- <span className="label-text custom-size-quiz" >{options[2]}</span> 
- <input type="radio"   name="radio-4" className="radio radio-accent checkbox-primary" />
-</label>
-</div>             
-  <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style">
-  <label className="label cursor-pointer" onClick={(e) => handleRadioBox(e.target.innerText)}>
- <span className="label-text custom-size-quiz"  >{options[3]}</span> 
- <input type="radio"  name="radio-4" className="radio radio-accent checkbox-primary" />
-</label>
 
-</div>             
+  
+ 
+ <div className="grid md:grid-cols-2 gap-5">
+ <button className="border border-blue-600 text-blue-700 font-medium p-4 rounded-xl flex items-center gap-2 hover:bg-blue-100" onClick={(e) => handleRadioBox(e.target.innerText)} > {options[0]} </button>
+
+
+
+<button className="border border-blue-600 text-blue-700 font-medium p-4 rounded-xl flex items-center gap-2 hover:bg-blue-100" onClick={(e) => handleRadioBox(e.target.innerText)} > {options[1]} </button>
+
+
+<button className="border border-blue-600 text-blue-700 font-medium p-4 rounded-xl flex items-center gap-2 hover:bg-blue-100" onClick={(e) => handleRadioBox(e.target.innerText)} > {options[2]} </button>
+         
+
+<button className="border border-blue-600 text-blue-700 font-medium p-4 rounded-xl flex items-center gap-2 hover:bg-blue-100" onClick={(e) => handleRadioBox(e.target.innerText)} > {options[3]} </button>
+ </div>
+
+            
        
      </div>
         </div>

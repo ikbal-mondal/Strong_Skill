@@ -15,10 +15,10 @@ const CourseRoutes = () => {
           </div>
            <div className="w-10/12 mx-auto ">
            {
-            courseQuiz.map(quiz => <ShowQuiz
+            courseQuiz.map((quiz,index) => <ShowQuiz
             key={quiz.id}
             quiz={quiz}
-            data={data}
+           index={index}
             ></ShowQuiz>)
            }
            </div>

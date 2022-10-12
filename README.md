@@ -1,3 +1,3 @@
 ## Strong Skill
 
-[repo link (https://github.com/programming-hero-web-course2/b6-quiz-crackerz-ikbal-mondal)] 
+[a link](https://github.com/user/repo/blob/branch/other_file.md)
