@@ -27,7 +27,10 @@ const ShowQuiz = ({quiz,data}) => {
       
       if( correctAnswer === e){
         // console.log(correctAnswer);
-        toast.success('correct answer', {autoClose: 500})
+     
+          toast.success('correct answer', {autoClose: 500})
+    
+
         
         
       } else {
@@ -42,7 +45,7 @@ const ShowQuiz = ({quiz,data}) => {
            
         <div className="">
       
-          <div className='border my-8 shadow-2xl rounded-2xl p-5 bg-slate-800'>
+          <div className='border my-8 shadow-2xl shadow-slate-900 rounded-2xl p-5 bg-slate-800 '>
           
           <div className="flex  justify-between items-center">
           
@@ -57,9 +60,9 @@ const ShowQuiz = ({quiz,data}) => {
           </div>
           
   <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style">
-  <label className="label cursor-pointer" onClick={(e) => handleRadioBox(e.target.innerText)} >
+  <label className="label cursor-pointer"  >
   <span className="label-text custom-size-quiz ">{options[0]}</span>
- <input type="radio"    name="radio-4" className="radio radio-accent checkbox-primary" />
+ <input type="radio"name="radio-4" className="radio radio-accent checkbox-primary" onClick={(e) => handleRadioBox(e.target.innerText)} />
 </label>
 </div>
   <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style" >

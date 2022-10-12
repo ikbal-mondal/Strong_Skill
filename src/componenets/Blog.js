@@ -5,9 +5,9 @@ const Blog = () => {
         
         <div className="">
             <div className='mt-2'>
-                <img  className="mx-auto rounded-lg shadow-2xl shadow-slate-800" src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/03/what-is-a-blog.png" alt="" />
+                <img  className="mx-auto rounded-lg shadow-2xl shadow-slate-600" src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/03/what-is-a-blog.png" alt="" />
             </div>
-            <div className='w-9/12 mx-auto'>
+            <div className='w-10/12 mx-auto'>
          <div className="border my-10 p-5">
             <h1 className='text-4xl my-4 font-semibold '>What is the purpose of the react router ?</h1>
             <p className='my-3 text-xl'>

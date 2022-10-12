@@ -10,10 +10,10 @@ const CourseRoutes = () => {
      const {name} = data
     return (
         <div>
-             <div className="">
-            <h1 className='text-2xl font-semibold text-center'>Quiz of {name}</h1>
+             <div className="my-6">
+            <h1 className='text-4xl font-semibold text-center'>Quiz of {name}</h1>
           </div>
-           <div className="w-9/12 mx-auto">
+           <div className="w-10/12 mx-auto ">
            {
             courseQuiz.map(quiz => <ShowQuiz
             key={quiz.id}

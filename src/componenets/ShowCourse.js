@@ -10,8 +10,8 @@ const ShowCourse = ({course}) => {
 
  
     return (
-        <div className='bg-gray-400 rounded-2xl'>
-            <div className="card card-compact  bg-base-100 shadow-2xl custom-style">
+        <div className='bg-gray-400 rounded-2xl '>
+            <div className="card card-compact  bg-base-100 shadow-2xl shadow-slate-800 custom-style">
    <figure><img className='w-1/2 bg-lime-300 rounded-xl my-4 custom-css-overly ' src={logo} alt="" /></figure>
    <div className="card-body ">
     <div className="flex justify-evenly items-center shadow-2xl my-2">

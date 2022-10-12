@@ -5,12 +5,12 @@ const Header = () => {
         <div>
 <div className="card w-full bg-base-100 shadow-xl header-bg">
 <div className="card lg:card-side bg-base-100 ">
-  <figure><img className='w-full' src="http://bestschoolnews.com/wp-content/uploads/2022/03/frontend.png" alt="Album"/></figure>
+  <figure><img className='w-full' src="https://img.freepik.com/vector-premium/jueces-jurado-personas-tarjeta-puntuacion-numeros-competencia-demostracion-evaluacion-veredicto-votacion-concepto-vector-calificacion-concurso-jurado_53562-11073.jpg" alt="Album"/></figure>
   <div className="card-body">
-    <h2 className="card-title">New album is released!</h2>
-    <p>Click the button to listen on Spotiwhy app.</p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis hic quis fugit nobis autem quo nisi at. Neque beatae at porro tenetur totam magnam cupiditate consequatur nihil provident fugiat. Similique sit incidunt veritatis delectus deserunt consequuntur nostrum sed illum neque ea, inventore laboriosam consectetur quas totam eos, tenetur, alias quibusdam.
+    <h2 className="card-title text-2xl font-semibold">Quizzes reinforcement a person's learning</h2>
+    <p className='text-xl'>So let's practice quizzes and sharpen our learning process.</p>
+    <p className=''>
+    Here are quizzes on four topics.  Each topic has different quizzes.  And you can give practical answer on each topic.  And you will know whether your answer is right or wrong.  And here in the blog there are some questions and also answers.
     </p>
   
   </div>
