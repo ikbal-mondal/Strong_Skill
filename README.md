@@ -1,3 +1,3 @@
 ## Strong Skill
 
-[a link](https://github.com/user/repo/blob/branch/other_file.md)
+[Live Site Link](https://poetic-palmier-88ff1d.netlify.app/blog)
