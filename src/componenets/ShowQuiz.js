@@ -23,16 +23,16 @@ const ShowQuiz = ({quiz,data}) => {
 
     
 
-     const handleRadioBox = () =>{
+     const handleRadioBox = (e) =>{
       
-      if( correctAnswer !== options){
+      if( correctAnswer === e){
         // console.log(correctAnswer);
-         toast.error('incorrect answer', {autoClose:500})
+        toast.success('correct answer', {autoClose: 500})
+        
         
       } else {
        
-        toast.success('correct answer', {autoClose: 500})
-       
+        toast.error('incorrect answer', {autoClose:500})
       }
 
      }
@@ -57,27 +57,27 @@ const ShowQuiz = ({quiz,data}) => {
           </div>
           
   <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style">
-  <label className="label cursor-pointer">
- <span className="label-text custom-size-quiz ">{options[0]}</span> 
- <input type="radio"  onClick={ () =>  handleRadioBox(options)} name="radio-4" className="radio radio-accent checkbox-primary" />
+  <label className="label cursor-pointer" onClick={(e) => handleRadioBox(e.target.innerText)} >
+  <span className="label-text custom-size-quiz ">{options[0]}</span>
+ <input type="radio"    name="radio-4" className="radio radio-accent checkbox-primary" />
 </label>
 </div>
   <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style" >
-  <label className="label cursor-pointer">
- <span className="label-text custom-size-quiz">{options[1]}</span> 
- <input type="radio" onClick={ () =>  handleRadioBox(options)}  name="radio-4" className="radio radio-accent checkbox-primary" />
+  <label className="label cursor-pointer" onClick={(e) => handleRadioBox(e.target.innerText)}>
+ <span className="label-text custom-size-quiz" >{options[1]}</span> 
+ <input type="radio"   name="radio-4" className="radio radio-accent checkbox-primary" />
 </label>
 </div>
   <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style" >
-  <label className="label cursor-pointer">
- <span className="label-text custom-size-quiz">{options[2]}</span> 
- <input type="radio"  onClick={ () =>  handleRadioBox(options)} name="radio-4" className="radio radio-accent checkbox-primary" />
+  <label className="label cursor-pointer" onClick={(e) => handleRadioBox(e.target.innerText)}>
+ <span className="label-text custom-size-quiz" >{options[2]}</span> 
+ <input type="radio"   name="radio-4" className="radio radio-accent checkbox-primary" />
 </label>
 </div>             
   <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style">
-  <label className="label cursor-pointer">
- <span className="label-text custom-size-quiz">{options[3]}</span> 
- <input type="radio" onClick={ () =>  handleRadioBox(options)}  name="radio-4" className="radio radio-accent checkbox-primary" />
+  <label className="label cursor-pointer" onClick={(e) => handleRadioBox(e.target.innerText)}>
+ <span className="label-text custom-size-quiz"  >{options[3]}</span> 
+ <input type="radio"  name="radio-4" className="radio radio-accent checkbox-primary" />
 </label>
 
 </div>             
