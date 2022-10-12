@@ -19,8 +19,11 @@ const ShowQuiz = ({ quiz, index }) => {
       // console.log(correctAnswer);
 
       toast.success("correct answer", { autoClose: 500 });
+      
+
     } else {
       toast.error("incorrect answer", { autoClose: 500 });
+      
     }
   };
 
@@ -49,32 +52,32 @@ const ShowQuiz = ({ quiz, index }) => {
             className="border border-blue-600 text-blue-700 font-medium p-4 rounded-xl flex items-center gap-2 hover:bg-blue-100"
             onClick={(e) => handleRadioBox(e.target.innerText)}
           >
-            {" "}
-            {options[0]}{" "}
+          
+            {options[0]}
           </button>
 
           <button
             className="border border-blue-600 text-blue-700 font-medium p-4 rounded-xl flex items-center gap-2 hover:bg-blue-100"
             onClick={(e) => handleRadioBox(e.target.innerText)}
           >
-            {" "}
-            {options[1]}{" "}
+            
+            {options[1]}
           </button>
 
           <button
             className="border border-blue-600 text-blue-700 font-medium p-4 rounded-xl flex items-center gap-2 hover:bg-blue-100"
             onClick={(e) => handleRadioBox(e.target.innerText)}
           >
-            {" "}
-            {options[2]}{" "}
+          
+            {options[2]}
           </button>
 
           <button
             className="border border-blue-600 text-blue-700 font-medium p-4 rounded-xl flex items-center gap-2 hover:bg-blue-100"
             onClick={(e) => handleRadioBox(e.target.innerText)}
           >
-            {" "}
-            {options[3]}{" "}
+            
+            {options[3]}
           </button>
         </div>
       </div>
