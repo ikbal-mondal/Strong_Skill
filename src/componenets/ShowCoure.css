@@ -1,0 +1,24 @@
+.custom-style:hover{
+
+    background-color: rgba(253, 253, 253, 0.747);
+    color: rgb(0, 0, 0);
+    transition: transform .6s;
+    transform: scale(0.9);
+    
+      
+}
+
+.custom-style:hover  .custom-hover{
+
+    background-color: rgb(4, 0, 255);
+    color: white;
+}
+
+.custom-style:hover  {
+    opacity: 0.6;
+  }
+  
+  /* .custom-style:hover .custom-css-overly {
+    opacity: 5.5;
+
+  } */

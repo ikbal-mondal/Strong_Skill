@@ -7,7 +7,7 @@ const Course = () => {
      
     return (
         <div>
-           <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-6 w-8/12 mx-auto my-5 ">
+           <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-6 w-8/12 mx-auto my-5">
            {
                 course.map(course => <ShawCourse
                 key={course.id}

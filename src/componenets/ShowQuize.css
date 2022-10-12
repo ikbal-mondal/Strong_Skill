@@ -1,0 +1,10 @@
+.custom-quiz-style:hover{
+
+    background-color: rgba(13, 164, 224, 0.596);
+    
+}
+
+.custom-quiz-style:hover .custom-size-quiz{
+
+    color: white;
+}

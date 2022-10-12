@@ -2,6 +2,8 @@ import React from 'react';
 import { EyeSlashIcon } from '@heroicons/react/24/solid'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './ShowQuize.css'
+
 const ShowQuiz = ({quiz,data}) => {
        
    
@@ -40,41 +42,41 @@ const ShowQuiz = ({quiz,data}) => {
            
         <div className="">
       
-          <div className='border my-8 shadow-2xl rounded-2xl p-5 '>
+          <div className='border my-8 shadow-2xl rounded-2xl p-5 bg-slate-800'>
           
           <div className="flex  justify-between items-center">
           
           <div className="">
-            <h1 className='text-xl m-2'>{question.slice(3, -4)}</h1>
+            <h1 className='text-xl m-2 text-white'>{question.slice(3, -4)}</h1>
             </div>
           <div className="">
-          <EyeSlashIcon onClick={ShowRightAnswer} className="h-6 w-6 text-black hover"/>
+          <EyeSlashIcon onClick={ShowRightAnswer} className="h-6 w-6 text-slate-400"/>
            </div>
            <ToastContainer />
          
           </div>
           
-  <div className="form-control p-3 m-3 bg-slate-200 rounded">
+  <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style">
   <label className="label cursor-pointer">
- <span className="label-text">{options[0]}</span> 
+ <span className="label-text custom-size-quiz ">{options[0]}</span> 
  <input type="radio"  onClick={ () =>  handleRadioBox(options)} name="radio-4" className="radio radio-accent checkbox-primary" />
 </label>
 </div>
-  <div className="form-control p-3 m-3 bg-slate-200 rounded">
+  <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style" >
   <label className="label cursor-pointer">
- <span className="label-text">{options[1]}</span> 
+ <span className="label-text custom-size-quiz">{options[1]}</span> 
  <input type="radio" onClick={ () =>  handleRadioBox(options)}  name="radio-4" className="radio radio-accent checkbox-primary" />
 </label>
 </div>
-  <div className="form-control p-3 m-3 bg-slate-200 rounded">
+  <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style" >
   <label className="label cursor-pointer">
- <span className="label-text">{options[2]}</span> 
+ <span className="label-text custom-size-quiz">{options[2]}</span> 
  <input type="radio"  onClick={ () =>  handleRadioBox(options)} name="radio-4" className="radio radio-accent checkbox-primary" />
 </label>
 </div>             
-  <div className="form-control p-3 m-3 bg-slate-200 rounded">
+  <div className="form-control p-3 m-3 bg-slate-200 rounded custom-quiz-style">
   <label className="label cursor-pointer">
- <span className="label-text">{options[3]}</span> 
+ <span className="label-text custom-size-quiz">{options[3]}</span> 
  <input type="radio" onClick={ () =>  handleRadioBox(options)}  name="radio-4" className="radio radio-accent checkbox-primary" />
 </label>
 
